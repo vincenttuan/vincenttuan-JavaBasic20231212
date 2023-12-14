@@ -13,13 +13,19 @@ public class Demo4 {
         // 3. 輸入體重
         System.out.print("請輸入體重: ");
         double w = scanner.nextDouble();// 得到體重
-        // 4. 計算 BMI 並印出
+        // 4. 計算 BMI
         double bmi = w / Math.pow(h/100, 2); 
-        System.out.printf("身高: %.1f 體重: %.1f BMI: %.2f%n", h, w, bmi);
         // 5. 請診斷 BMI 值 (過輕? 正常? 過重?)
         // 過輕 bmi < 18
         // 正常 18 <= bmi < 23 
         // 過重 bmi >= 23 
-
+        String result = "正常";
+        if(bmi < 18) {
+            result = "過輕";
+        } else if(bmi >= 23) {
+            result = "過重";
+        }
+        System.out.printf("身高: %.1f 體重: %.1f BMI: %.2f 診斷: %s%n", h, w, bmi, result);
+        
     }
 }
