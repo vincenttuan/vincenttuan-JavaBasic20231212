@@ -30,11 +30,11 @@ public class Demo3 {
         // 債券
         double bondAmount = 50_000;
         double bondReturnRate = 0.03;
-        double bondRisk = 2;
+        double bondRisk = 4;
         // 房地產
         double realEstateAmount = 150_000;
         double realEstateReturnRate = 0.06;
-        double realEStateRisk = 3;
+        double realEStateRisk = 4;
 
         // 1. 每一項的投資預期年收益為何?
         double stockReturn = stockAmount * stockReturnRate;
@@ -53,9 +53,9 @@ public class Demo3 {
 
         // 3. 若小明希望降低整體投資組合的風險等級, 他應該增加哪一類的投資?
         // 找風險最低的投資商品(stockRisk, bondRisk, realEStateRisk)
-        if(bondRisk < stockRisk && bondRisk < realEStateRisk) {
+        if(bondRisk <= stockRisk && bondRisk <= realEStateRisk) {
             System.out.println("債券投資風險最低");
-        } else if(realEStateRisk < stockRisk && realEStateRisk < bondRisk) {
+        } else if(realEStateRisk <= stockRisk && realEStateRisk <= bondRisk) {
             System.out.println("房地產投資風險最低");
         } else {
             System.out.println("股票投資風險最低");
