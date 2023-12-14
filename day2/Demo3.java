@@ -50,5 +50,10 @@ public class Demo3 {
         System.out.printf("房地產預期年收益 : %,.0f%n", realEstateReturn);
         System.out.printf("總投資額 : %,.0f%n", totalInvestment);
         System.out.printf("年收益總額 : %,.0f%n", totalReturn);
+
+        // 3. 若小明希望降低整體投資組合的風險等級, 他應該增加哪一類的投資?
+        // 找風險最低的投資商品(stockRisk, bondRisk, realEStateRisk)
+        
+
     }
 }
