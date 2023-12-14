@@ -18,6 +18,10 @@ public class Demo2 {
         System.out.printf("股票現值: %,.0f%n", currentValue);
         System.out.printf("總利潤: %,.0f%n", profit);
 
-
+        // 請問報酬率ROI ?
+        // roi = profit / totalInvestment
+        double roi = profit / totalInvestment;
+        System.out.printf("報酬率ROI: %.3f %n", roi);
+        System.out.printf("報酬率ROI: %.3f%% %n", roi*100);
     }
 }
