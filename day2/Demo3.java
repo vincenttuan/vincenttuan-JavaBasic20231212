@@ -53,7 +53,13 @@ public class Demo3 {
 
         // 3. 若小明希望降低整體投資組合的風險等級, 他應該增加哪一類的投資?
         // 找風險最低的投資商品(stockRisk, bondRisk, realEStateRisk)
-        
+        if(bondRisk < stockRisk && bondRisk < realEStateRisk) {
+            System.out.println("債券投資風險最低");
+        } else if(realEStateRisk < stockRisk && realEStateRisk < bondRisk) {
+            System.out.println("房地產投資風險最低");
+        } else {
+            System.out.println("股票投資風險最低");
+        }
 
     }
 }
