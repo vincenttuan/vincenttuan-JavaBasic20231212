@@ -16,6 +16,10 @@ public class Demo4 {
         // 4. 計算 BMI 並印出
         double bmi = w / Math.pow(h/100, 2); 
         System.out.printf("身高: %.1f 體重: %.1f BMI: %.2f%n", h, w, bmi);
-        // 
+        // 5. 請診斷 BMI 值 (過輕? 正常? 過重?)
+        // 過輕 bmi < 18
+        // 正常 18 <= bmi < 23 
+        // 過重 bmi >= 23 
+
     }
 }
