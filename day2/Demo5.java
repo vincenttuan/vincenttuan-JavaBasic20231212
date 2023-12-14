@@ -22,8 +22,5 @@ public class Demo5 {
         double discount = (amount >= 5000) ? 0.8 : (amount < 1000) ? 0.95 : 0.9; // 折數
         System.out.printf("付款金額: %,.0f%n", amount * discount);
 
-
-
-
     }
 }
