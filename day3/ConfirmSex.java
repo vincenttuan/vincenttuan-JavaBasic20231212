@@ -4,7 +4,7 @@ public class ConfirmSex {
     public static void main(String[] args) {
         String id = "A163456789";
         char area = id.charAt(0); // 戶籍地
-        char sex  = id.charAt(1);  // 性別
+        char sex  = id.charAt(1); // 性別
         char type = id.charAt(2); // 籍別
         
         // 判斷性別使用 if-else
