@@ -1,5 +1,7 @@
 package day3;
 
+import java.util.Scanner;
+
 /**
 案例 1: 計算稅金
 描述:
@@ -13,6 +15,17 @@ package day3;
 */
 public class TaxCalculator {
     public static void main(String[] args) {
-        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("請輸入年收入:");
+        double income = scanner.nextDouble();
+        double tax = 0;
+        if(income <= 540_000) {
+            tax = income * 0.05;
+        } else if(income <= 1_210_000) {
+            tax = income * 0.12;
+        } else {
+            tax = income * 0.2;
+        }
+        System.out.printf("年收入: %,.2f 稅金: %,.2f%n", income, tax);
     }
 }
