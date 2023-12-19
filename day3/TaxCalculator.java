@@ -18,14 +18,16 @@ public class TaxCalculator {
         Scanner scanner = new Scanner(System.in);
         System.out.print("請輸入年收入:");
         double income = scanner.nextDouble();
+        double rate = 0;
         double tax = 0;
         if(income <= 540_000) {
-            tax = income * 0.05;
+            rate = 0.05;
         } else if(income <= 1_210_000) {
-            tax = income * 0.12;
+            rate = 0.12;
         } else {
-            tax = income * 0.2;
+            rate = 0.2;
         }
-        System.out.printf("年收入: %,.2f 稅金: %,.2f%n", income, tax);
+        tax = income * rate;
+        System.out.printf("年收入: %,.2f 稅率: %.2f%% 稅金: %,.2f%n", income, rate, tax);
     }
 }
