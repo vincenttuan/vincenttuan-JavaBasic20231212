@@ -7,6 +7,7 @@ public class ConfirmSex {
         char sex  = id.charAt(1);  // 性別
         char type = id.charAt(2); // 籍別
         
+        // 判斷性別使用 if-else
         if(sex == '1') {
             System.out.println("男性");
         } else if(sex == '2') {
@@ -15,6 +16,7 @@ public class ConfirmSex {
             System.out.println("性別錯誤");
         }
 
+        // 判斷性別使用 switch-case
         switch (sex) {
             case '1':
                 System.out.println("男性");
@@ -27,6 +29,7 @@ public class ConfirmSex {
                 break;
         }
 
+        
 
     }
 }
