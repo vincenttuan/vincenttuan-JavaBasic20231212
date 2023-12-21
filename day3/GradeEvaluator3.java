@@ -42,5 +42,7 @@ public class GradeEvaluator3 {
                 grade = "不及格";
         }
         System.out.printf("成績: %d 評等: %s%n", score, grade);
+
+        scanner.close();
     }
 }
