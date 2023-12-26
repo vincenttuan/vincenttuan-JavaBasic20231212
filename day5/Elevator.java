@@ -22,10 +22,15 @@ public class Elevator {
                     System.out.printf("%d樓%n", cur);
                     Thread.sleep(1000); // 暫停 1000ms = 1s
                 }
-                System.out.printf("到達目 %d 樓%n", cur);
             } else {
                 System.out.println("電梯下樓");
+                for(;cur > tar;cur--) {
+                    System.out.printf("%d樓%n", cur);
+                    Thread.sleep(1000); // 暫停 1000ms = 1s
+                }
             }
+            System.out.printf("到達目 %d 樓%n", cur);
+            
 
         } while(true);
     }
