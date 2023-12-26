@@ -30,17 +30,19 @@ public class Elevator2 {
             if(tar > cur) {
                 System.out.println("電梯上樓");
                 for(;cur < tar;cur++) {
-                    System.out.printf("%d樓%n", cur);
+                    if(cur == 0) continue;
+                    System.out.printf("%s樓%n", cur < 0 ? ("B"+(cur*-1)) : cur);
                     Thread.sleep(delay); // 暫停
                 }
             } else {
                 System.out.println("電梯下樓");
                 for(;cur > tar;cur--) {
-                    System.out.printf("%d樓%n", cur);
+                    if(cur == 0) continue;
+                    System.out.printf("%s樓%n", cur < 0 ? ("B"+(cur*-1)) : cur);
                     Thread.sleep(delay); // 暫停
                 }
             }
-            System.out.printf("到達目 %d 樓%n", cur);
+            System.out.printf("到達目 %s 樓%n", cur < 0 ? ("B"+(cur*-1)) : cur);
             
 
         } while(true);
