@@ -17,7 +17,6 @@ public class Elevator2 {
             Scanner scanner = new Scanner(System.in);
             System.out.printf("101大樓電梯目前在 %d 樓, 請問你要到哪一層:", cur);
             int tar = scanner.nextInt();
-            scanner.close();
             // 檢查 tar 是否在合理的範圍
             if(tar < min || tar > max || tar == cur) {
                 continue;
